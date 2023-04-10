@@ -1,10 +1,11 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {Button} from "@mui/material";
+import styles from "./navbar.css";
 
 export default function Navbar() {
-  const navigate = useNavigate();
+ 
   return (
-    <nav style={{width: "50%", margin: "0 auto" }}>
+    <nav className={styles.Navbar}>
         <Link to="/">
             <Button>Home</Button>
         </Link>
