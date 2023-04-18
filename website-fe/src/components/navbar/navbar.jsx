@@ -1,30 +1,21 @@
-import { Link } from "react-router-dom";
-import {Button} from "@mui/material";
+import { useNavigate } from "react-router-dom";
+//import {Button} from "@mui/material";
 import styles from "./navbar.css";
 
 export default function Navbar() {
  
+    const navigate = useNavigate();
   return (
     <nav className={styles.Navbar}>
-        <Link to="/">
-            <Button>Home</Button>
-        </Link>
+        <button onClick={()=>navigate("/")}>Home</button>
         <span> | </span>
-        <Link to="/about">
-            <Button>About</Button>
-        </Link>
+        <button onClick={()=>navigate("/about")}>About</button>
         <span> | </span>
-        <Link to="/contact">
-            <Button>Contact</Button>
-        </Link>
+        <button onClick={()=>navigate("/contact")}>Contact</button>
         <span> | </span>
-        <Link to="/blog">
-            <Button>Blog</Button>
-        </Link>
+        <button onClick={()=>navigate("/blog")}>Blog</button>
         <span> | </span>
-        <Link to="/portfolio">
-            <Button>Portfolio</Button>
-        </Link>
+        <button onClick={()=>navigate("/portfolio")}>Portfolio</button>
     </nav>
   );
 }

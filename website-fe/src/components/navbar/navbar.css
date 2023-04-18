@@ -1,15 +1,15 @@
 body{
-    display: grid;
+    /*display: grid;*/
     text-align: center;
     
-   border-spacing: 10px; 
+   border-spacing: 100px; 
 }
 
 nav{
-    background-image: linear-gradient(90deg,#1a2a6c, #b21f1f,#fdbb2d);
+    /*background-image: linear-gradient(90deg,#1a2a6c, #b21f1f,#fdbb2d);*/
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 Button{
@@ -25,6 +25,9 @@ Button{
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 
+    border-color: transparent;
+
     background-color: black;
-    font-size: 50px;
+    padding: 10px;
+    font-size: 1em;
 }
