@@ -6,6 +6,7 @@ import About from './components/aboutme/about.jsx';
 import Contact from './components/contactpage/contact';
 import Blog from './components/blogpage/blog';
 import Portfolio from './components/portfoliopage/portfolio';
+import Clips from './components/clips/clips';
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact/>} />
           <Route path="/blog" element={<Blog/>} />
           <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/clips" element={<Clips/>} />
 
         </Routes>
       </BrowserRouter>
