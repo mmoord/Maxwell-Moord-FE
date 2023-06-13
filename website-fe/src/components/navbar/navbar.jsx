@@ -17,7 +17,7 @@ export default function Navbar() {
         <span> | </span>
         <button onClick={()=>navigate("/portfolio")}>Portfolio</button>
         <span> | </span>
-        <button onClick={()=>navigate("/clips")}>Clips</button>
+        <button onClick={()=>navigate("/games")}>Games</button>
     </nav>
   );
 }
